@@ -1,20 +1,22 @@
-# Welcome to Orange Meets
+# Welcome to Cloudflare Meet
 
-Orange Meets is a demo application built using [Cloudflare Calls](https://developers.cloudflare.com/calls/). To build your own WebRTC application using Cloudflare Calls, get started in the [Cloudflare Dashboard](https://dash.cloudflare.com/?to=/:account/calls).
+(Cloudflare Meet was formerly known as Orange Meets)
 
-Simpler examples can be found [here](https://github.com/cloudflare/calls-examples).
+Meet is a demo application built using [Cloudflare Realtime SFU](https://developers.cloudflare.com/realtime/). To build your own WebRTC application using Cloudflare Realtime, get started in the [Cloudflare Dashboard](https://dash.cloudflare.com/?to=/:account/realtime).
+
+Simpler examples can be found [here](https://github.com/cloudflare/realtime-examples).
 
 [Try the demo here!](https://demo.orange.cloudflare.dev)
 
-![A screenshot showing a room in Orange Meets](orange-meets.png)
+![A screenshot showing a room in Meet](orange-meets.png)
 
 ## Architecture Diagram
 
-![Diagram of Orange Meets architecture](architecture.png)
+![Diagram of Meet architecture](architecture.png)
 
 ## Variables
 
-Go to the [Cloudflare Calls dashboard](https://dash.cloudflare.com/?to=/:account/calls) and create an application.
+Go to the [Cloudflare Realtime dashboard](https://dash.cloudflare.com/?to=/:account/realtime) and create an application.
 
 Put these variables into `.dev.vars`
 
@@ -31,7 +33,7 @@ The following variables are optional:
 - `MAX_WEBCAM_FRAMERATE` (default: `24`): the maximum number of frames per second for each meeting participant's webcam.
 - `MAX_WEBCAM_QUALITY_LEVEL` (default `1080`): the maximum resolution for each meeting participant's webcam, based on the smallest dimension (i.e. the default is 1080p).
 
-To customise these variables, place replacement values in `.dev.vars` (for development) and in the `[vars]` section of `wrangler.toml` (for the deployment).
+To customize these variables, place replacement values in `.dev.vars` (for development) and in the `[vars]` section of `wrangler.toml` (for the deployment).
 
 ## Development
 
